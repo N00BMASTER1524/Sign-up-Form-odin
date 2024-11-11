@@ -48,6 +48,7 @@ html, body {
     font-weight: bold;          /* Make text bold */
     margin-left: 3px;          /* Optional: Add space between the logo and text */
     font-family: 'Norse-Bold', sans-serif;  /* Fallback to sans-serif if the custom font fails */
+    margin-top: 5.5px;
   }
   
   .logo {
