@@ -78,13 +78,73 @@ html, body {
     color: #f0f0f0;
 }
 
-  .other-container {
+.other-container {
     flex-grow: 1;               /* Make the other container take up the remaining space */
+    flex-direction: column;
     display: flex;              /* Use Flexbox for layout in this container */
-    justify-content: center;    /* Center content horizontally */
-    align-items: center;        /* Center content vertically */
-    background-color: #f0f0f0;  /* Optional background */
-    padding: 20px;              /* Optional padding for the container */
+    background-color: #f1f1f1;  /* Optional background */
     box-sizing: border-box;     /* Ensure padding doesn't affect layout */
-  }
-  
+}
+
+
+.info{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 125px 25px 20px; 
+}
+
+
+form {
+    display: flex;              /* Use Flexbox for layout */
+    justify-content: space-between; /* Space out the columns */
+    gap: 20px; 
+    background-color: #ffffff; /* Optional: Space between the two columns */
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.form-container h2 {
+    padding: 10px 25px; /* 10px for top and bottom, 25px for left and right */
+    background-color: #ffffff;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+
+
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;     /* Stack inputs vertically in each column */
+    gap: 10px;                  /* Optional: Space between form fields */
+    width: 45%;                 /* Adjust width for both columns */
+    padding-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;           /* Add space above the button */
+}
+
+.footer{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer button {
+    background-color: green;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer p a {
+    color: green;
+    text-decoration: none;
+}
