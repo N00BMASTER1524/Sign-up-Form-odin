@@ -1,0 +1,89 @@
+/* Ensure no margin or padding on the body and html */
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(fonts/Norse-Bold.otf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Full height for the viewport */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .container {
+    display: flex;              /* Align both containers side by side */
+    width: 100vw;               /* Full width of the viewport */
+    height: 100vh;              /* Full height of the viewport */
+  }
+  
+  .image-container {
+    position: relative;         /* Positioning context for the overlay bar */
+    display: inline-block;       /* Ensure the container only takes the image size */
+    max-height: 100%;            /* Prevent the container from being taller than the viewport */
+  }
+  
+  .background-image {
+    display: block;             /* Ensures no unwanted space below the image */
+    width: auto;                /* Maintain the image's natural width */
+    height: 100%;               /* Make the height of the image fill the container */
+    object-fit: contain;        /* Make sure the whole image fits without cropping */
+  }
+  
+  .overlay-bar {
+    position: absolute;         /* Position the bar over the background image */
+    top: 30%;                   /* Align bar vertically to the middle of the container */
+    left: 0;
+    width: 100%;                /* Full width of the container */
+    background-color: rgba(0, 0, 0, 0.505); /* Semi-transparent black */
+    display: flex;              /* Use Flexbox to align content inside the bar */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    transform: translateY(-50%); /* Adjust the bar's vertical position */
+    padding: 10px 0;            /* Vertical padding for the bar */
+  }
+  
+  .overlay-text {
+    color: white;               /* White text color for contrast */
+    font-size: 3.5em;             /* Adjust text size as needed */
+    font-weight: bold;          /* Make text bold */
+    margin-left: 3px;          /* Optional: Add space between the logo and text */
+    font-family: 'Norse-Bold', sans-serif;  /* Fallback to sans-serif if the custom font fails */
+  }
+  
+  .logo {
+    width: 50px;                /* Set a fixed size for the logo */
+    height: auto;               /* Maintain aspect ratio */
+    margin-right: 3px;         /* Optional: Add space between logo and text */
+  }
+  
+.overlay-credit {
+    position: absolute;         /* Position the bar over the background image */
+    bottom: 0;                  /* Align bar to the bottom of the container */
+    left: 0;
+    width: 100%;                /* Full width of the container */
+    display: flex;              /* Use Flexbox to align content inside the bar */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    padding: 10px 0;            /* Vertical padding for the bar */
+}
+
+.credit-text{
+    color: #f0f0f0;
+    font-size: 0.7rem;
+}
+
+.credit-text a{
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+  .other-container {
+    flex-grow: 1;               /* Make the other container take up the remaining space */
+    display: flex;              /* Use Flexbox for layout in this container */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    background-color: #f0f0f0;  /* Optional background */
+    padding: 20px;              /* Optional padding for the container */
+    box-sizing: border-box;     /* Ensure padding doesn't affect layout */
+  }
+  
