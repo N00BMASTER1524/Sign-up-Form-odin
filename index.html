@@ -24,33 +24,41 @@
                 <p>You know you want to.</p>
             </div>
             <div class="form-container">
-                <h2>Let's do this!</h2>
-                <form id="signup-form" action="#" method="POST" onsubmit="return validateForm()">
-                    <!-- Left column with First Name, Email, and Password -->
-                    <div class="form-column">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
+               
+                <form class="form-container">
+                    <!-- <header class="form-header">Let's do this!</header> -->
+          
+                    <div class="row">
+                      <div class="column">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required />
+                      </div>
+                      <div class="column">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required />
+                      </div>
                     </div>
-                
-                    <!-- Right column with the rest of the form elements -->
-                    <div class="form-column">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone">
-                
-                        <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
-                        <span id="password-error" style="color:red; display:none;">Passwords do not match!</span>
+                    <div class="row">
+                      <div class="column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                      </div>
+                      <div class="column">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required />
+                      </div>
                     </div>
-                </form>
+                    <div class="row">
+                      <div class="column">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required />
+                      </div>
+                      <div class="column">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" id="confirm" name="confirm" required />
+                      </div>
+                    </div>
+                  </form>
             </div>
           
             <div class="footer">
